@@ -1,0 +1,3 @@
+module "childmodule" {
+  source = "../webserverModule"
+}
