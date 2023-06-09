@@ -23,14 +23,7 @@ pipeline {
             }
         }
     
-        stage ('Terraform Plan') {
-            steps {
-                script {
-                    sh "cd ${params.name} && terraform plan"
-                }
-            }
-        }
-
+   
         stage ('Terraform apply') {
             steps {
                 script {
